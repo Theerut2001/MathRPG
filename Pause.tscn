@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://edq7du6kwbch"]
+
+[ext_resource type="Texture2D" uid="uid://c1vwlq0kbnfah" path="res://backgrounds/Heaven's Gate.png" id="2_2jkrm"]
+[ext_resource type="FontFile" uid="uid://cjms1opgtd4ay" path="res://Deutsch.ttf" id="3_km1i3"]
+
+[node name="PauseMenu" type="Control" unique_id=66806303]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Heaven\'sGate" type="Sprite2D" parent="." unique_id=345349449]
+position = Vector2(576, 324)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_2jkrm")
+
+[node name="RootMargin" type="MarginContainer" parent="." unique_id=1363659386]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="RootVBox" type="VBoxContainer" parent="RootMargin" unique_id=161313752]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=609368793]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="Title" type="Label" parent="RootMargin/RootVBox/MarginContainer" unique_id=963147215]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_km1i3")
+theme_override_font_sizes/font_size = 72
+text = "Pause"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=658606764]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="ResumeBtn" type="Button" parent="RootMargin/RootVBox/MarginContainer2" unique_id=862607153]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Resume"
+
+[node name="MarginContainer3" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=558662948]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="TryAgainBtn" type="Button" parent="RootMargin/RootVBox/MarginContainer3" unique_id=1738793622]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Try Again"
+
+[node name="MarginContainer4" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=797536678]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="MainMenuBtn" type="Button" parent="RootMargin/RootVBox/MarginContainer4" unique_id=1966440722]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Main Menu"

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://dx7vkncg3plan"]
+
+[ext_resource type="Texture2D" uid="uid://c1vwlq0kbnfah" path="res://backgrounds/Heaven's Gate.png" id="1_eiy7p"]
+[ext_resource type="Script" uid="uid://di5rqsvrp4nbw" path="res://scripts/main_menu.gd" id="1_h7a2f"]
+[ext_resource type="FontFile" uid="uid://cjms1opgtd4ay" path="res://Deutsch.ttf" id="2_h7a2f"]
+
+[node name="MainMenu" type="Control" unique_id=166254201]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_h7a2f")
+
+[node name="Heaven\'sGate" type="Sprite2D" parent="." unique_id=139072150]
+position = Vector2(576, 324)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_eiy7p")
+
+[node name="RootMargin" type="MarginContainer" parent="." unique_id=1753944402]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="RootVBox" type="VBoxContainer" parent="RootMargin" unique_id=1074737387]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=1182501343]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Title" type="Label" parent="RootMargin/RootVBox/MarginContainer" unique_id=1731961299]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_h7a2f")
+theme_override_font_sizes/font_size = 72
+text = "Math RPG"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=1706896569]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="StartBtn" type="Button" parent="RootMargin/RootVBox/MarginContainer2" unique_id=1887438874]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Start Game"
+
+[node name="MarginContainer3" type="MarginContainer" parent="RootMargin/RootVBox" unique_id=723671013]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="QuitBtn" type="Button" parent="RootMargin/RootVBox/MarginContainer3" unique_id=646594845]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Quit Game"
